@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+Setup and Configuration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Install packages: express, mysql, jsonwebtoken, bcrypt.
+Configure Express server and MySQL connection.
+Authentication
 
-## Available Scripts
+Create user schema.
+Implement login and registration routes.
+Use JWT for session management.
+API Endpoints
 
-In the project directory, you can run:
+Dashboard: Fetch counts of accounts, messages sent, and messages received.
+Add Account:
+POST to add a new account.
+GET to fetch added accounts.
+Send Message: POST to send messages.
+View Responses: GET to fetch sent messages and their responses.
+Frontend (React)
+Setup and Configuration
 
-### `npm start`
+Create React app using create-react-app.
+Install packages: axios, react-router-dom.
+Authentication
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create login and registration forms.
+Manage authentication state with context or state management library.
+Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dashboard: Display counts of accounts, messages sent, and messages received.
+Add Account:
+List added accounts.
+Form to add a new account (QR code generation).
+Send Message:
+Dropdown of accounts.
+Text areas for message and numbers.
+Submit button.
+View Responses:
+List sent messages.
+Detailed view of responses.
+Database (MySQL)
+Database Schema
+Users table for authentication.
+Accounts table for storing WhatsApp numbers.
+Messages table for storing sent messages.
+Responses table for storing received responses.
+Sample Code Snippets
+Backend (Node.js)
 
-### `npm test`
+Setup Express server and MySQL connection.
+Create authentication routes for login and registration.
+Implement API endpoints for Dashboard, Add Account, Send Message, and View Responses.
+Frontend (React)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Setup React app with routing.
+Create components for Dashboard, Add Account, Send Message, and View Responses.
+Implement authentication forms and state management.
